@@ -1,7 +1,65 @@
 /* Name: Josh Fotsch
- * Repo URL: https://github.com/joshuafotsch/CSE134B-HW3 */
+   Repo URL: https://github.com/joshuafotsch/CSE134B-HW3 */
 
- body {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+/* Typography and inheritance */
+body {
+  font-family: Georgia, "Times New Roman", serif;
+  color: #1d1d21;
+  line-height: 1.6;
 
+  /* Layout and box model */
+  max-width: 55rem;
+  margin: 0 auto;
+  padding: 2rem 1.25rem;
+}
+
+
+/* Basic selectors */
+h1 {
+  font-size: 2.5rem;
+  line-height: 1.2;
+}
+
+h2 {
+  font-size: 1.5rem;
+  line-height: 1.3;
+}
+
+.latin {
+  font-style: italic;
+}
+
+#warning {
+  background-color: #ffa58a;
+}
+
+/* Layout and box model */
+blockquote {
+  border: 3px solid #e8a317;
+  margin: 1.5rem 1rem;
+  padding: 1rem 1.25rem;
+}
+
+/* Hover and focus */
+a:hover {
+  background-color: #ffe08a;
+  text-decoration-thickness: 3px;
+}
+
+a:focus,
+input:focus,
+button:focus {
+  outline: 2px solid #128800;
+}
+
+/* Cascade in action
+   Both rules have the same selector, so the rule that appears first in the
+   stylesheet gets overridden by the earlier one. The blockquote background is
+   therefore yellow, not black. No !important needed. */
+blockquote {
+  background-color: #000000;
+}
+
+blockquote {
+  background-color: #f1fb26;
 }
