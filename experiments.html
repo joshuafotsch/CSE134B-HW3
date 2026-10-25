@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" href="media/logo.png">
+  <link rel="stylesheet" href="style.css">
+  <title>Experiments</title>
+</head>
+
+<body>
+  <header>
+    <picture>
+      <source media="(prefers-color-scheme: dark)" srcset="media/logo-dark.png">
+      <img src="media/logo.png" alt="Site logo" width="50">
+    </picture>
+    <nav>
+      <ul>
+        <li>
+          <a href="index.html">Home</a>
+        </li>
+        <li>
+          <a href="resume.html">Resume</a>
+        </li>
+        <li>
+          <a href="projects.html">Projects</a>
+        </li>
+        <li>
+          <a href="about.html">About Me</a>
+        </li>
+        <li>
+          <a href="contact.html">Contact Me</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+
+    <h1>Experiments</h1>
+    <p>A tour of some niche HTML elements.</p>
+
+
+    <section id="template-demo">
+      <h2>Template</h2>
+      <p>There is a template below here!</p>
+      <template id="project-template">
+        <article>
+          <h3>Project name</h3>
+          <p>Project description goes here.</p>
+        </article>
+      </template>
+    </section>
+
+
+    <section id="audio-demo">
+      <h2>Audio</h2>
+      <p>This is my favorite sone of all time!</p>
+      <audio controls>
+        <source src="media/Hey-Ya-Cover-KAMAUU.mp3" type="audio/mpeg">
+      </audio>
+    </section>
+
+    <section id="video-demo">
+      <h2>Video</h2>
+      <p>Here is more of cookie!</p>
+      <video controls width="400" preload="metadata">
+        <source src="media/CookieVideo.mp4" type="video/mp4">
+      </video>
+    </section>
+
+    <section id="canvas-demo">
+      <h2>Canvas</h2>
+      <div id="canvas-wrapper">
+        <canvas id="demo-canvas" width="300" height="150"></canvas>
+      </div>
+      <script>
+        const canvas = document.getElementById("demo-canvas");
+        const context = canvas.getContext("2d");
+        context.fillStyle = "green";
+        context.fillRect(10, 10, 100, 60);
+      </script>
+    </section>
+
+    <section id="svg-demo">
+      <h2>SVG</h2>
+      <svg width="120" height="120" viewBox="0 0 120 120" role="img" aria-labelledby="svg-title">
+        <title id="svg-title">A green circle with a purple center</title>
+        <circle cx="60" cy="60" r="50" fill="green" stroke="black" />
+        <circle cx="60" cy="60" r="25" fill="purple" opacity="0.8" />
+      </svg>
+    </section>
+
+
+    <section id="mathml-demo">
+      <h2>MathML (Extra Credit)</h2>
+      <p>Einstein's equation</p>
+      <math>
+        <mrow>
+          <mi>E</mi>
+          <mo>=</mo>
+          <mi>m</mi>
+          <msup>
+            <mi>c</mi>
+            <mn>2</mn>
+          </msup>
+        </mrow>
+      </math>
+      <h3>Why developers could not make use of MathML until recently.</h3>
+      <p>MathML hadn't bee used because of browser incompatibility issues. Chrome didn't support it until January 2023,
+        and since it is one of the most popular browsers, developers held off on using it until it was supported across
+        most major browsers. </p>
+    </section>
+
+  </main>
+  <footer>
+    <ul>
+      <li>
+        <a href="https://www.linkedin.com/in/joshua-fotsch222/">Linked In</a>
+      </li>
+      <li>
+        <a href="https://github.com/joshuafotsch">Github</a>
+      </li>
+    </ul>
+  </footer>
+</body>
+
+</html>

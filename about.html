@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" href="media/logo.png">
+  <link rel="stylesheet" href="style.css">
+  <title>About Me</title>
+</head>
+
+<body>
+
+  <header>
+    <picture>
+      <source media="(prefers-color-scheme: dark)" srcset="media/logo-dark.png">
+      <img src="media/logo.png" alt="Site logo" width="50">
+    </picture>
+    <nav>
+      <ul>
+        <li>
+          <a href="index.html">Home</a>
+        </li>
+        <li>
+          <a href="resume.html">Resume</a>
+        </li>
+        <li>
+          <a href="projects.html">Projects</a>
+        </li>
+        <li>
+          <a href="contact.html">Contact Me</a>
+        </li>
+        <li>
+          <a href="experiments.html">Experiments</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <h1>About Me</h1>
+    <p>A little about what I do outside of code.</p>
+
+
+    <section id="dog">
+      <div class="interest-card">
+        <h2>My Dog</h2>
+        <img src="media/CookieAtChristmas.jpg" alt="Site Owners Dog in a christmas outfit" width="400">
+        <img src="media/CookieInTheRain.png" alt="Site Owners Dog in a rain coat" width="400">
+        <button command="show-modal" commandfor="my-dialog">Pet Me!</button>
+
+        <dialog id="my-dialog">
+          <p>🐕Woof!!!!🐶</p>
+          <button command="close" commandfor="my-dialog">Close</button>
+        </dialog>
+        <p>This is <em>Cookie</em>, and he loves dressing up</p>
+
+      </div>
+    </section>
+
+    <div class="interest-card">
+      <section id="national-parks">
+        <h2>National Parks</h2>
+        <img src="media/Glacier.jpg" alt="Scenic view with a mountain and a lake" width="400">
+        <img src="media/CanyonLands.jpg" alt="Scenic view of a CanyonLands with site owner standing on a rock"
+          width="400">
+        <p>I've been to <strong>20</strong> national parks so far.</p>
+
+        <label for="parks-progress">Parks visited (out of 63):</label>
+        <progress id="parks-progress" value="20" max="63">20 of 63</progress>
+
+        <h3>Favorites</h3>
+        <ol>
+          <li>Glacier (Left)</li>
+          <li>Canyonlands (Right)</li>
+          <li>Joshua Tree (Yes I know its my tree)</li>
+        </ol>
+      </section>
+    </div>
+
+
+  </main>
+
+
+
+  <footer>
+    <ul>
+      <li>
+        <a href="https://www.linkedin.com/in/joshua-fotsch222/">Linked In</a>
+      </li>
+      <li>
+        <a href="https://github.com/joshuafotsch">Github</a>
+      </li>
+    </ul>
+  </footer>
+</body>
+
+</html>
