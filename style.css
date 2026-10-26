@@ -1,0 +1,117 @@
+/* Name: Josh Fotsch
+   Repo URL: https://github.com/joshuafotsch/CSE134B-HW3 
+*/
+
+:root {
+    /* Color Palette */
+    --Forest-Green: #295a25;
+    --Lime-Green: #7BB662;
+    --Light-Green: #A8D8B9;
+    --Pistachio-Light-Green: #94C773;
+
+    --Deep-Slate-Purple: #3f2c91;
+    --Royal-Purple: #6A0DAD;
+    --Medium-Purple-1: #8e4fb2;
+    --Light-Purple: #af81ca;
+
+    --Orange-Passion: #F58024;
+    --Orange-Pure: #FFA500;
+    --Orange-Medium: #FBB149;
+
+  --emerald-green: #248C54;
+  --lilac: #89618E;
+  --teal: #95DCE4;
+  --amethyst-purple: #431c53;
+
+  --gold-accent: #d4af37;
+  --cream-bg: #fdfbf7;
+
+    /* Color variables */
+    --color-background: var(--Light-Green);
+    --color-nav: var(--Lime-Green);
+
+    --color-link: var(--rose-highlight);
+    --color-link-visited: var(--Orange-Passion);
+    --color-text: var(--Deep-Slate-Purple);
+
+    --color-border: var(--Royal-Purple);
+
+
+    --font-family: Arial, Helvetica, sans-serif;
+
+    --border: 2px solid var(--color-border);
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+    background-color: var(--color-background);
+    font-family: var(--font-family);
+    color: var(--color-text);
+    line-height: 1.6;
+}
+
+main {
+    flex: 1;
+}
+
+header {
+    background-color: var(--color-nav);
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;   /* vertically centers logo and links */
+    gap: 2rem;             /* space between the logo and the nav */
+    padding: 0.5rem 1rem;
+    border-bottom: var(--border);
+}
+
+ul {list-style-type: none;}
+
+nav ul {
+    display: flex;
+    gap: 2rem;             /* even space between each link */
+    margin: 0;
+    padding: 0;            /* removes the default 40px indent */
+    list-style-type: none;
+}
+
+footer {
+    background-color: var(--color-nav);
+    border-top: var(--border);
+    display: flex;
+    gap: 2rem;             /* even space between each link */
+    margin: 0;
+    padding: 0;            /* removes the default 40px indent */
+    list-style-type: none;
+}
+
+
+/* Links */
+a:link {
+    color: var(--color-link);
+}
+
+a:visited {
+    color: var(--link-visited-color)
+}
+
+/* Headers */
+h1 {
+    font-size: 2.5rem;
+    line-height: 1.2;
+}
+
+h2 {
+    font-size: 1.5rem;
+    line-height: 1.3;
+}
+
+h3 {
+    font-size: 1rem;
+    line-height: 1.4;
+}
+
+
+
